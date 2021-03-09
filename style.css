@@ -1,0 +1,7 @@
+/* Entire page style */
+*{
+    margin: 2;
+    padding: 2;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
