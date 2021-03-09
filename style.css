@@ -1,7 +1,21 @@
-/* Entire page style */
+/* Entire page styles */
 *{
     margin: 2;
     padding: 2;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Body Styles */
+body {
+    background-color: rgb(90, 129, 180);
+}
+
+/* Start button */
+.start_btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
 }
