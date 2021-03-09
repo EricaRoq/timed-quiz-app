@@ -13,7 +13,8 @@ body {
 
 /* Start button */
 .start_btn,
-.info_box {
+.info_box,
+.quiz_box {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -104,6 +105,13 @@ body {
     color: #fff;
     border-color: #007bff;
 }
+
+.quiz_box {
+    width: 550px;
+    background: #fff;
+    border-radius: 5px;
+}
+
 
 
 
