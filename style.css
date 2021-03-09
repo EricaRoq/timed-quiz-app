@@ -12,10 +12,49 @@ body {
 }
 
 /* Start button */
-.start_btn {
+.start_btn,
+.info_box {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
 
+/* Start button styles */
+.start_btn button {
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(112, 34, 34);
+    padding: 15px 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: rgb(172, 165, 165);
+    cursor: pointer;
+}
+
+.info_box {
+    width: 540px;
+    background: white;
+    border-radius: 5px;
+}
+
+.info_box .info_title {
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+    padding: 0 35px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.info_box .info_list {
+    padding: 15px 35px;
+}
+
+.info_box .info_list .info {
+    margin: 50px 0;
+    font-size: 17px;
 }
