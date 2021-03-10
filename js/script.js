@@ -19,13 +19,18 @@ exit_btn.onclick = ()=>{
 continue_btn.onclick = ()=>{
     info_box.classList.remove("activeInfo"); //Hide the info box
     quiz_box.classList.add("activeQuiz"); //show the quiz box
-    showQuestions(4);
+    showQuestions(0);
 }
 
 let que_count = 0;
 
 const next_btn = quiz_box.querySelector(".next_btn");
 
+// If Next Button is Clicked
+next_btn.onclick = ()=>{
+    que_count++;
+    showQuestions(que_count);
+}
 
 // Getting questions and options from array
 function showQuestions(index){
