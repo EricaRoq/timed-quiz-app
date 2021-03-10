@@ -55,4 +55,59 @@ let questions = [
             "functions"
         ]
     },
+    {
+        numb: 6,
+        question: "The condition in an if/else statement is enclosed within",
+        answer: "parenthesis",
+        options: [
+            "quotes",
+            "curly brackets",
+            "parenthesis",
+            "square brackets"
+        ]
+    },
+    {
+        numb: 7,
+        question: "In JavaScript, the expression x!=y returns false if",
+        answer: "the variables are equal",
+        options: [
+            "the variables are equal",
+            "x is less than y",
+            "the variables are not equal",
+            "None of the above"
+        ]
+    },
+    {
+        numb: 8,
+        question: "In JavaScript, which of the following is a logical operator?",
+        answer: "&&",
+        options: [
+            "|",
+            "&&",
+            "%",
+            "/"
+        ]
+    },
+    {
+        numb: 9,
+        question: "Arrays in JavaScript can be used to store",
+        answer: "all of the above",
+        options: [
+            "numbers and strings",
+            "other arrays",
+            "booleans",
+            "all of the above"
+        ]
+    },
+    {
+        numb: 10,
+        question: "A very useful tool used during development and debugging for printing content to the debugger is",
+        answer: "console.log",
+        options: [
+            "JavaScript",
+            "terminal/bash",
+            "for loops",
+            "console.log"
+        ]
+    },
 ];
