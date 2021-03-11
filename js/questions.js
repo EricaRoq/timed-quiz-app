@@ -40,7 +40,7 @@ let questions = [
         options: [
             "//This is a comment",
             "'This is a comment",
-            "<!--This is a comment-->",
+            "<!-This is a comment->",
             "#This is a comment"
         ]
     },
