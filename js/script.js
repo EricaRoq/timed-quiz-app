@@ -34,11 +34,16 @@ let que_numb =1;
 let counter;
 let timeValue = 15;
 let widthValue = 0;
+let userScore = 0;
 
 const next_btn = quiz_box.querySelector(".next_btn");
 const result_box = document.querySelector(".result_box");
 const restart_quiz = result_box.querySelector(".buttons .restart");
 const quit_quiz = result_box.querySelector(".buttons .quit");
+
+quit_quiz.onclick = ()=>{
+    window.location.reload();
+}
 
 // If Next Button is Clicked
 next_btn.onclick = ()=>{
@@ -80,7 +85,9 @@ function optionSelected(answer){
     let userAns = answer.textContent;
     let correctAns = questions[que_count].answer;
     let allOptions = option_list.children.length;
-    if(userAns == correctAns){
+    if(userScore == correctAns){
+        userScore += 1;
+        console.log(userScore);
         answer.classList.add("correct");
         console.log("Answer is Correct!");
     }else{
@@ -108,6 +115,19 @@ function showResultBox(){
     info_box.classList.remove("activeInfo"); //hide the info box
     quiz_box.classList.remove("activeQuiz"); //hide the quiz box
     result_box.classList.add("activeResult"); //show the result box
+    const scoreText = result_box.querySelector(".score_text");
+    if(userScore > 3){
+        let scoreTag = '<span>Your Final Score is:<p>' + userScore +'</p>' + questions.length + '<p></span>';
+        scoreText.innerHTML = scoreTag;
+    }
+    // else if(userScore > 1){
+    //     let scoreTag = '<span>Your Final Score is:<p>' + userScore +'</p>' + questions.length + '<p></span>';
+    //     scoreText.innerHTML = scoreTag;
+    // }
+    // else{
+    //     let scoreTag = '<span>Your Final Score is:<p>' + userScore +'</p>' + questions.length + '<p></span>';
+    //     scoreText.innerHTML = scoreTag;
+    // }
 }
 
 function startTimer(time){
