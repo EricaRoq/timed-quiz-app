@@ -1,3 +1,4 @@
+debugger;
 // Getting all required elements
 const start_btn = document.querySelector(".start_btn button");
 const info_box = document.querySelector(".info_box");
@@ -165,16 +166,16 @@ function startTimer(time){
     }
 }
 
-function startTimerLine(time){
-    counterLine = setInterval(timer, 29);
-    function timer(){
-        time += 1;
-        timeLine.style.width = time + "px";
-        if(time > 549){
-            clearInterval(counterLine);
-        }
-    }
-}
+// function startTimerLine(time){
+//     counterLine = setInterval(timer, 29);
+//     function timer(){
+//         time += 1;
+//         timeLine.style.width = time + "px";
+//         if(time > 549){
+//             clearInterval(counterLine);
+//         }
+//     }
+// }
 
 
 
