@@ -147,7 +147,7 @@ body {
 .quiz_box header .title {
     font-size: 30px;
     font-weight: 600;
-    color: #7c48cf;
+    color: #8a64c7;
 }
 
 .quiz_box header .timer {
@@ -339,3 +339,6 @@ footer .next_btn:hover {
     cursor: pointer;
     transition: all 0.3s ease;
 }
+
+
+

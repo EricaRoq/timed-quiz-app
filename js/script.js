@@ -26,8 +26,8 @@ continue_btn.onclick = ()=>{
     quiz_box.classList.add("activeQuiz"); //show the quiz box
     showQuestions(0);
     queCounter(1);
-    startTimer(15);
-    startTimerLine(0);
+    startTimer(75);
+    // startTimerLine(0);
 }
 
 let que_count = 0;
@@ -35,7 +35,7 @@ let que_numb =1;
 let counter;
 let counterLine;
 let timeValue = 75;
-let widthValue = 0;
+// let widthValue = 0;
 let userScore = 0;
 
 const next_btn = quiz_box.querySelector(".next_btn");
@@ -49,14 +49,14 @@ restart_quiz.onclick = ()=>{
     let que_count = 0;
     let que_numb =1;
     let timeValue = 75;
-    let widthValue = 0;
+    // let widthValue = 0;
     let userScore = 0;
     showQuestions(que_count);
     queCounter(que_numb);
     clearInterval(counter);
     startTimer(timeValue);
-    clearInterval(counterLine);
-    startTimerLine(widthValue);
+    // clearInterval(counterLine);
+    // startTimerLine(widthValue);
     next_btn.style.display = "none";
     
 }
