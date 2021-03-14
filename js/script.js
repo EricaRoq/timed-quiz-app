@@ -1,4 +1,3 @@
-debugger;
 // Getting all required elements
 const start_btn = document.querySelector(".start_btn button");
 const info_box = document.querySelector(".info_box");
@@ -7,8 +6,10 @@ const continue_btn = info_box.querySelector(".buttons .restart");
 const quiz_box = document.querySelector(".quiz_box");
 const timeCount = quiz_box.querySelector(".timer .timer_sec");
 const timeLine = quiz_box.querySelector("header .time_line");
-
+// const score_btn = document.querySelector("score_box");
+// const score_box = document.querySelector("score_box");
 const option_list = document.querySelector(".option_list");
+
 
 // If Start Quiz Button is Clicked
 start_btn.onclick = ()=>{
@@ -29,6 +30,11 @@ continue_btn.onclick = ()=>{
     startTimer(75);
     // startTimerLine(0);
 }
+
+// If High Scores button is Clicked
+// score_btn.onclick = ()=>{
+//     score_box.classList.add("activeScores"); //Show the High Scores Box
+// }
 
 let que_count = 0;
 let que_numb =1;
@@ -106,7 +112,7 @@ function optionSelected(answer){
     let correctAns = questions[que_count].answer;
     let allOptions = option_list.children.length;
     if(userScore == correctAns){
-        userScore += 1;
+        userScore += 10;
         console.log(userScore);
         answer.classList.add("correct");
         console.log("Answer is Correct!");
@@ -134,6 +140,7 @@ function optionSelected(answer){
 function showResultBox(){
     info_box.classList.remove("activeInfo"); //hide the info box
     quiz_box.classList.remove("activeQuiz"); //hide the quiz box
+    score_box.classList.remove("activeScore"); //hide the score box
     result_box.classList.add("activeResult"); //show the result box
     const scoreText = result_box.querySelector(".score_text");
     if(userScore > 3){

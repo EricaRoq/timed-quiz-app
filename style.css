@@ -8,7 +8,7 @@
 
 /* Body Styles */
 body {
-    background-color: rgb(104, 34, 161);
+    background-color: rgb(157, 98, 206);
 }
 
 /* Start button */
@@ -27,7 +27,7 @@ body {
 
 .info_box.activeInfo,
 .quiz_box.activeQuiz,
-.result_box.activeResult{
+.result_box.activeResult {
     z-index: 5;
     opacity: 1;
     pointer-events: auto;
@@ -35,7 +35,7 @@ body {
 }
 
 /* Button styles */
-.start_btn button {
+.start_btn .buttons {
     font-size: 25px;
     font-weight: 500;
     color: #007bff;
@@ -182,13 +182,13 @@ body {
     user-select: none;
 }
 
-.quiz_box header .time_line {
+/* .quiz_box header .time_line {
     position: absolute;
     bottom: 0px;
     left: 0px;
     height: 3px;
     background:#007bff;
-}
+} */
 
 .quiz_box section {
     padding: 25px 30px 20px 30px;
