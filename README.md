@@ -11,7 +11,7 @@ This app will run in the browser and will feature dynamically updated HTML and C
 
 # Deployed Application
 
-
+[timed-quiz-app](https://ericaroq.github.io/timed-quiz-app/)
 
 # Resources and Contributers
 
