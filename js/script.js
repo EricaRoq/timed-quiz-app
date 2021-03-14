@@ -144,7 +144,7 @@ function showResultBox(){
     result_box.classList.add("activeResult"); //show the result box
     const scoreText = result_box.querySelector(".score_text");
     if(userScore > 3){
-        let scoreTag = '<span>Your Final Score is:<p>' + userScore +'</p>' + questions.length + '<p></span>';
+        let scoreTag = `<span>Your Final Score is: <p>${userScore}</p>${questions.length}<p></span>`;
         scoreText.innerHTML = scoreTag;
     }
     // else if(userScore > 1){
