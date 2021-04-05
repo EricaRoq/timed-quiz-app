@@ -11,7 +11,7 @@ This app will run in the browser and will feature dynamically updated HTML and C
 
 # Deployed Application
 
-[timed-quiz-app](https://ericaroq.github.io/timed-quiz-app/)
+[timed-quiz-app](https://ricapi96.github.io/timed-quiz-app/)
 
 # Resources and Contributers
 
@@ -19,5 +19,3 @@ This app will run in the browser and will feature dynamically updated HTML and C
 * Jonathan Rein (cohort)
 * Jim Harris (cohort)
 * Jude Clark (TA)
-* https://www.youtube.com/watch?v=WUBhpSRS_fk&t=1259s
-* https://www.youtube.com/watch?v=pQr4O1OITJo&t=0s

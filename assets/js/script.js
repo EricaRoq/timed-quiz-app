@@ -1,4 +1,4 @@
-// console.log("Hello There!");
+console.log("Hello There!");
 
 // High scores modal
 // var myModal = document.getElementById('myModal')
