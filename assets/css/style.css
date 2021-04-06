@@ -7,13 +7,14 @@ body {
 
 h1 {
     text-align: center;
-    color: blueviolet;
+    color: black;
+    font-family: fantasy;
 }
 
-h3 {
+h4 {
     background-color: lightgrey;
     width: 200px;
-    border: 10px solid blueviolet;
+    border: 10px solid rgb(65, 199, 177);
     padding: 40px;
     margin: 10px;
     float: right;
