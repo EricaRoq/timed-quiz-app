@@ -1,6 +1,6 @@
 // console.log("Hello There!");
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('OnStartClick', () => {
     const timeLeftDisplay = document.querySelector('#time-left');
     const startBtn = document.querySelector('#start-btn');
     let timeLeft = 120;
