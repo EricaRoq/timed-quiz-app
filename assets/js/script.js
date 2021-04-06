@@ -10,3 +10,4 @@ console.log("Hello There!");
 
 // Variables
 const startBtn = document.getElementById("start-btn");
+const 

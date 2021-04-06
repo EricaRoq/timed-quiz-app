@@ -16,6 +16,4 @@ This app will run in the browser and will feature dynamically updated HTML and C
 # Resources and Contributers
 
 * https://www.w3schools.com
-* Jonathan Rein (cohort)
-* Jim Harris (cohort)
-* Jude Clark (TA)
+
