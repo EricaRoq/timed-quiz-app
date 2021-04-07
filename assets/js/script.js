@@ -1,35 +1,7 @@
-// console.log("Hello There!");
 
-// document.addEventListener('OnStartClick', () => {
-//     const timer = document.querySelector('#time-left');
-//     const startBtn = document.querySelector('#start-btn');
-//     let seconds = 120;
 
-//     function startCount() {
-//         setInterval(function() {
-//             if (seconds <= 0 ) {
-//                 clearInterval(seconds = 0);
-//             }
-//             timer.innerHTML = seconds;
-//             seconds -= 1;
-//         }, 1000)
-//     }
 
-//     startBtn.addEventListener('click', startCount);
-
-//     // Start Quiz
-//     startBtn.addEventListener('click', startQuiz);
-//     function startQuiz() {
-//         var x = document.getElementById("quiz-questions");
-//         if (x.style.display === "none") {
-//             x.style.display = "block";
-//         }else {
-//             x.style.display = "none";
-//         }
-//     }
-
-// });
-
+// Timer
 const startTime = 120;
 let time = startTime * 60;
 
@@ -136,70 +108,88 @@ const questions = [
             { text: 'alert("Hello World")', correct: true },
             { text: 'msgBox("Hello World")', correct: false },
             { text: 'alertBox="Hello World"', correct: false},
-            { text: 'alertBox("Hello World")', correct: false}
-        ]
+            { text: 'alertBox("Hello World")', correct: false},
+        ],
     },
     {
-        question: 'What is 2 + 2',
+        question: 'How do you create a function?',
         answers: [
-            { text: '4', correct: true },
-            { text: '22', correct: false }
-        ]
+            { text: 'function:myFunction()', correct: true },
+            { text: 'function=myFunction()', correct: false },
+            { text: 'function myFunction()', correct: false },
+            { text: 'myFunction():function', correct: false },
+        ],
     },
     {
-        question: 'What is 2 + 2',
+        question: 'How does a "for" loop start?',
         answers: [
-            { text: '4', correct: true },
-            { text: '22', correct: false }
-        ]
+            { text: 'for (i = 0; i <= 5)', correct: true },
+            { text: 'for (i = 0; i <= 5; i++)', correct: false },
+            { text: 'for i = 1 to 5', correct: false },
+            { text: 'for (i <= 5; i++)', correct: false },
+        ],
     },
     {
-        question: 'What is 2 + 2',
+        question: 'How can you add a comment in a JavaScript?',
         answers: [
-            { text: '4', correct: true },
-            { text: '22', correct: false }
-        ]
+            { text: '//This is a comment', correct: true },
+            { text: '"This is a comment"', correct: false },
+            { text: '<!--This is a comment-->', correct: false },
+            { text: '#This is a comment', correct: false },
+        ],
     },
     {
-        question: 'What is 2 + 2',
+        question: 'Commonly used data types DO NOT include:',
         answers: [
-            { text: '4', correct: true },
-            { text: '22', correct: false }
-        ]
+            { text: 'strings', correct: true },
+            { text: 'booleans', correct: false },
+            { text: 'alerts', correct: false },
+            { text: 'functions', correct: false },
+        ],
     },
     {
-        question: 'What is 2 + 2',
+        question: 'The condition in an if/else statement is enclosed within:',
         answers: [
-            { text: '4', correct: true },
-            { text: '22', correct: false }
-        ]
+            { text: 'quotes', correct: true },
+            { text: 'curly brackets', correct: false },
+            { text: 'parenthesis', correct: false },
+            { text: 'square brackets', correct: false },
+        ],
     },
     {
-        question: 'What is 2 + 2',
+        question: 'In JavaScript, the expression x!=y returns false if:',
         answers: [
-            { text: '4', correct: true },
-            { text: '22', correct: false }
-        ]
+            { text: 'the variables are equal', correct: true },
+            { text: 'x is less than y', correct: false },
+            { text: 'the variables are not equal', correct: false },
+            { text: 'None of the above', correct: false },
+        ],
     },
     {
-        question: 'What is 2 + 2',
+        question: 'In JavaScript, which of the following is a logical operator?',
         answers: [
-            { text: '4', correct: true },
-            { text: '22', correct: false }
-        ]
+            { text: '|', correct: true },
+            { text: '&&', correct: false },
+            { text: '%', correct: false },
+            { text: '/', correct: false },
+        ],
     },
     {
-        question: 'What is 2 + 2',
+        question: 'Arrays in JavaScript can be used to store:',
         answers: [
-            { text: '4', correct: true },
-            { text: '22', correct: false }
-        ]
+            { text: 'numbers and strings', correct: true },
+            { text: 'other arrays', correct: false },
+            { text: 'booleans', correct: false },
+            { text: 'all of the above', correct: false },
+        ],
     },
     {
-        question: 'What is 2 + 2',
+        question: 'A very useful tool used during development and debugging for printing content to the debugger is:',
         answers: [
-            { text: '4', correct: true },
-            { text: '22', correct: false }
-        ]
+            { text: 'JavaScript', correct: true },
+            { text: 'terminal/bash', correct: false },
+            { text: 'for loops', correct: false },
+            { text: 'console.log', correct: false },
+        ],
     },
-]
+];
