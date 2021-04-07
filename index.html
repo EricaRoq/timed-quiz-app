@@ -13,7 +13,31 @@
 <!-- First page -->
 <!-- Header -->
    <h1>Code Quiz</h1>
-    <button class="start" id="start-btn">Start</button>
+
+<!-- Questions Box -->
+<div class="container">
+  <div id="question-container" class="hide">
+    <div id="question">Question</div>
+    <div id="answer-buttons" class="btn-grid">
+      <button class="btn">Answer 1</button>
+      <button class="btn">Answer 2</button>
+      <button class="btn">Answer 3</button>
+      <button class="btn">Answer 4</button>
+    </div>
+  </div>
+  <div class="controls">
+    <button id="start-btn" class="start-btn btn">Start</button>
+    <button id="next-btn" class="next-btn btn">Next Question</button>
+  </div>
+</div>
+
+
+
+
+
+    <!-- <button class="start" id="start-btn">Start</button> -->
+<!-- Timer -->
+  <p id="count-down">Timer: </p>
 <!-- High scores button -->
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -47,7 +71,9 @@
 
 
 <!-- Timer box -->    
-<h5>Timer: <span id="time-left">120</span></h5>
+<!-- <h5>Timer: <span id="time-left">120</span></h5>
+
+<div id="quiz-questions">Questions:</div> -->
 
 
     

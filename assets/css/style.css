@@ -1,3 +1,4 @@
+
 body {
     padding: 20px;
     margin: auto;
@@ -20,6 +21,15 @@ h5 {
     float: right;
 }
 
+p {
+    float: right;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    font-size: large;
+    font-weight: 500;
+    padding: 5px;
+    display: inline-flex;
+}
+
 #time-count {
     /* float: right !important; */
     color: blueviolet;
@@ -37,7 +47,7 @@ h5 {
     cursor: pointer;
 }
 
-#start-btn {
+/* #start-btn {
     color: #FFFFFF;
     background-color: #0D6EFD;
     padding: .375rem .75rem;
@@ -52,4 +62,4 @@ h5 {
     border-radius: .25rem;
     border-color: #0D6EFD;
     cursor: pointer;
-}
+} */
