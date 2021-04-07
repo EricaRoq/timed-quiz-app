@@ -75,3 +75,32 @@ p {
     padding: 10px;
     box-shadow: 0 0 10px 2px;
 }
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.btn {
+    border: 1 px solid black;
+    background-color: gray;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    outline: none;
+}
+
+.btn:hover {
+    border-color: black;
+}
+
+.btn.correct {
+    background-color: green;
+}
+
+.btn.wrong {
+    background-color: darkred;
+}
+
