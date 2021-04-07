@@ -45,3 +45,26 @@ function refreshCount() {
     time --;
 }
 
+// Starting game
+
+const startButton = document.getElementById('start-btn');
+const questionContainerEl = document.getElementById('question-container');
+
+startButton.addEventListener('click', startGame);
+
+function startGame() {
+    console.log('Started');
+    startButton.classList.add('hide');
+    questionContainerEl.classList.remove('hide');
+
+}
+
+// Allowing user to see next question
+function nextQuestion() {
+
+}
+
+// What happens when answer is selected
+function selectAnswer() {
+
+}

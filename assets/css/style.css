@@ -1,7 +1,7 @@
 
 body {
-    padding: 20px;
-    margin: auto;
+    padding: 10px;
+    margin: 20px;
     background-color: cornflowerblue;
 }
 
@@ -74,6 +74,7 @@ p {
     border-radius: 5px;
     padding: 10px;
     box-shadow: 0 0 10px 2px;
+    
 }
 
 .btn-grid {
@@ -85,7 +86,7 @@ p {
 
 .btn {
     border: 1 px solid black;
-    background-color: gray;
+    background-color:#0d6efd;
     border-radius: 5px;
     padding: 5px 10px;
     color: white;
@@ -104,3 +105,17 @@ p {
     background-color: darkred;
 }
 
+.start-btn, .next-btn {
+    font-size: 1.5rem;
+    padding: 5px 10px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none; 
+}
