@@ -47,25 +47,8 @@ p {
     cursor: pointer;
 }
 
-/* #start-btn {
-    color: #FFFFFF;
-    background-color: #0D6EFD;
-    padding: .375rem .75rem;
-    text-align: center;
-    display: inline-block;
-    font-weight: 400;
-    line-height: 1.5;
-    position: absolute;
-    border: 1px solid transparent;
-    top: 50%;
-    left: 50%;
-    border-radius: .25rem;
-    border-color: #0D6EFD;
-    cursor: pointer;
-} */
-
 .container {
-    width: 800px;
+    width: 400px;
     max-width: 80%;
     display: flex;
     justify-content: center;
@@ -79,7 +62,6 @@ p {
 
 .btn-grid {
     display: grid;
-    grid-template-columns: repeat(2, auto);
     gap: 10px;
     margin: 20px 0;
 }
@@ -93,10 +75,6 @@ p {
     outline: none;
 }
 
-.btn:hover {
-    border-color: black;
-}
-
 .btn.correct {
     background-color: green;
 }
@@ -108,12 +86,6 @@ p {
 .start-btn, .next-btn {
     font-size: 1.5rem;
     padding: 5px 10px;
-}
-
-.controls {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .hide {

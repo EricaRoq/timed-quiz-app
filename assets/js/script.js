@@ -1,55 +1,54 @@
-
-
+// Constant Variables
+const startButton = document.getElementById('start-btn');
+const nextButton = document.getElementById('next-btn');
+const questionContainer = document.getElementById('question-container');
+const question = document.getElementById('question');
+const answerButtons = document.getElementById('answer-buttons');
+const countStart = document.getElementById('count-down');
 
 // Timer
 const startTime = 120;
 let time = startTime * 60;
 
-const countDownStart = document.getElementById('count-down');
+setInterval(reloadCount, 1000);
 
-setInterval(refreshCount, 1000);
-
-function refreshCount() {
+function reloadCount() {
     const mins = Math.floor(time / 120);
     let secs = time % 120;
 
-    countDownStart.innerHTML = (mins, secs);
+    countStart.innerHTML = (mins, secs);
     time --;
 }
 
-// Starting game
 
-const startButton = document.getElementById('start-btn');
-const nextButton = document.getElementById('next-btn');
-const questionContainerEl = document.getElementById('question-container');
-const questionEl = document.getElementById('question');
-const answerButtonsEl = document.getElementById('answer-buttons');
 
-let shuffledQuestions, currentQuestionIndex
-
+// Event Listeners
 startButton.addEventListener('click', startGame);
 nextButton.addEventListener('click', () => {
-    currentQuestionIndex++
-    nextQuestion()
-})
-
-function startGame() {
-    startButton.classList.add('hide');
-    shuffledQuestions = questions.sort(() => Math.random() - .5);
-    currentQuestionIndex = 0;
-    questionContainerEl.classList.remove('hide');
+    currentQuestion++;
     nextQuestion();
+});
+
+
+// Starting the game
+function startGame() {
+    currentQuestion = 0;
+    startButton.classList.add('hide');
+    
+    questionContainer.classList.remove('hide');
+    // nextQuestion();
+    // startTime();
 
 }
 
 // Allowing user to see next question
 function nextQuestion() {
     resetState();
-    showQuestion(shuffledQuestions[currentQuestionIndex]);
+    showQuestion();
 }
 
 function showQuestion(question) {
-    questionEl.innerHTML = question.question;
+    question.innerHTML = question.question;
     question.answers.forEach(answer => {
         const button = document.createElement('button');
         button.innerText = answer.text;
@@ -58,36 +57,31 @@ function showQuestion(question) {
             button.dataset.correct = answer.correct;
         }
         button.addEventListener('click', selectAnswer);
-        answerButtonsEl.appendChild(button);
+        answerButtons.appendChild(button);
     });
 }
 
 function resetState() {
     nextQuestion.classList.add('hide');
-    while (answerButtonsEl.firstChild) {
-        answerButtonsEl.removeChild(answerButtonsEl.firstChild);
+    while (answerButtons.firstChild) {
+        answerButtons.removeChild(answerButtons.firstChild);
     }
 }
 
 // What happens when answer is selected
-function selectAnswer(e) {
-    const selectedButton = e.target;
+function selectAnswer(x) {
+    const selectedButton = x.target;
     const correct = selectedButton.dataset.correct;
     setStatusClass(document.body, correct)
-    Array.from(answerButtonsEl.children).forEach(button => {
-        setStatusClass(button, button.dataset.correct)
-    })
-    if (shuffledQuestions.length > currentQuestionIndex + 1) {
-        nextButton.classList.remove('hide') 
-    } else {
-        startButton.innerText = 'Restart'
-        startButton.classList.remove('hide')
-    }
+    Array.from(answerButtons.children).forEach(button => {
+        setStatus(button, button.dataset.correct)
+    });
+  
     
 }
 
-function setStatusClass(element, correct) {
-    clearStatusClass(element)
+function setStatus(element, correct) {
+    clearStatus(element)
     if (correct) {
         element.classList.add('correct')
     } else {
@@ -95,12 +89,12 @@ function setStatusClass(element, correct) {
     }
 }
 
-function clearStatusClass(element) {
+function clearStatus(element) {
     element.classList.remove('correct')
     element.classList.remove('wrong')
 }
 
-// Questions
+// Questions and Answers
 const questions = [
     {
         question: 'How do you write "Hello World" in an alert box?',
