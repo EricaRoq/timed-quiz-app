@@ -10,9 +10,17 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-<!-- First page -->
+
 <!-- Header -->
    <h1>Code Quiz</h1>
+
+<!-- High scores button -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  View High Scores
+</button>
+
+<!-- Timer box -->    
+<h5><span id="time-left">TIMER:</span><p id="count-down"></p></h5>
 
 <!-- Questions Box -->
 <div class="container">
@@ -31,20 +39,7 @@
   </div>
 </div>
 
-
-
-
-
-    <!-- <button class="start" id="start-btn">Start</button> -->
-<!-- Timer -->
-  <p id="count-down">Timer: </p>
-<!-- High scores button -->
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    View High Scores
-  </button>
-  
-  <!-- Modal -->
+ <!-- High Scores Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -70,8 +65,7 @@
   </div>
 
 
-<!-- Timer box -->    
- <h5><span id="time-left">TIMER</span></h5>
+
 
 
 
