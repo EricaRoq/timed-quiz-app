@@ -12,10 +12,7 @@ h1 {
     font-family: fantasy;
 }
 
-h5 {
-    background-color: lightgrey;
-    width: 150px;
-    border: 5px solid rgb(65, 199, 177);
+h4 {
     padding: 20px;
     margin: 5px;
     float: right;
