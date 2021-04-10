@@ -18,3 +18,5 @@ This app will run in the browser and will feature dynamically updated HTML and C
 * https://www.w3schools.com
 * https://www.youtube.com/watch?v=vSV_Ml2_A88
 
+## License
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
