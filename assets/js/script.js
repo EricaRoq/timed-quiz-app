@@ -18,6 +18,8 @@ function reloadCount() {
 
     countStart.innerHTML = (mins, secs);
     time --;
+// Must make an if/else statement to start timer on button press and then clearInterval
+    clearInterval();
 }
 
 
