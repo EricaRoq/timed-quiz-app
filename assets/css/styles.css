@@ -94,7 +94,7 @@ div.slide-left {
   width:100%;
   overflow:hidden;
 }
-div.slide-left p {
+div.slide-left h1 {
   animation: slide-left 10s;
 }
 
