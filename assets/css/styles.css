@@ -1,93 +1,167 @@
-
-body {
-    padding: 10px;
-    margin: 20px;
-    background-color: cornflowerblue;
-}
-
-
-h1 {
-    text-align: center;
-    color: black;
-    font-family: fantasy;
-}
-
-h4 {
-    padding: 20px;
-    margin: 5px;
-    float: right;
-}
-
-p {
-    float: right;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
-    font-size: large;
-    font-weight: 500;
-    padding: 5px;
-    display: inline-flex;
-}
-
-#time-count {
-    /* float: right !important; */
-    color: blueviolet;
-    
-}
-
-#count-down {
-    /* float: right !important; */
-    counter-reset: 120;
-}
-
-#scores-btn {
-    color: blue;
-    border-color: blue;
+* {
+    font-family: "Fredoka One", cursive;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    height: 100vh;
+  }
+  
+  /* All elements inside body */
+  body {
+    background-color: #feffcd;
+    min-height: 100vh;
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navbar */
+  .my-navbar {
+    justify-content: space-between;
+    background-color: teal;
+  }
+  
+  /* Content inside navbar */
+  .my-container {
+    color: white;
+  }
+  
+  /* View Highscores button */
+  .scoreboard {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .scoreboard:hover {
+    color: white;
+    border: 5px outset rgb(255, 255, 255);
     cursor: pointer;
-}
-
-.container {
-    width: 400px;
-    max-width: 80%;
+    padding: 3px;
+  }
+  
+  /* Card */
+  .old-card {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-radius: 40px;
+    border-width: 5px;
+    border-color: teal;
+    color: hsl(206, 17%, 28%);
+    font-size: 18px;
+    max-width: 800px;
+    padding: 30px;
+  }
+  
+  /* New Card */
+  .new-card {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 40px;
+    border-width: 5px;
+    border-color: rgb(58, 223, 209);
+    color: hsl(206, 17%, 28%);
+    font-size: 18px;
+    max-width: 800px;
+    padding: 10px;
+  }
+  
+  /* Answer buttons */
+  .btn-grid {
+    display: grid;
+    gap: 10px;
+    margin: 10px 0;
+  }
+  
+  /* Content inside card */
+  .card-body {
+    text-align: center;
+  }
+  
+  /* Start button */
+  .start-btn {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: whitesmoke;
-    border-radius: 5px;
-    padding: 10px;
-    box-shadow:0 0 10px 2px;
-    
-}
-
-.btn-grid {
-    display: grid;
-    gap: 10px;
-    margin: 20px 0;
-}
-
-.btn {
-    border: 1 px solid black;
-    background-color:#0d6efd;
-    border-radius: 5px;
-    padding: 5px 10px;
     color: white;
-    outline: none;
-}
-
-.btn.correct {
-    background-color: green;
-}
-
-.btn.wrong {
-    background-color: darkred;
-}
-
-.start-btn, .next-btn {
-    font-size: 1.5rem;
+    border-color: rgb(59, 24, 212);
+    background-color: rgb(63, 95, 201);
+    border-radius: 5px;
+    padding: 3px;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* When hover over start button */
+  .start-btn:hover {
+    color: white;
+    background-color: rgb(30, 156, 83);
+    border-color: rgb(16, 119, 62);
+  }
+  
+  /* Answer buttons */
+  .btn {
+    color: rgba(0, 0, 0, 0.781);
+    border: 3px solid rgb(255, 85, 85);
+    border-radius: 5px;
     padding: 5px 10px;
-}
-
-.hide {
-    display: none; 
-}
+  }
+  
+  /* Submit and Play Again buttons */
+  .submit-btn {
+    color: white;
+    background-color: rgb(255, 85, 85);
+    border-color: rgb(255, 85, 85);
+    border-radius: 5px;
+    padding: 3px;
+  }
+  
+  /* Go Back and Clear Highscores */
+  .go-back-btn {
+    color: white;
+    background-color: rgb(255, 85, 85);
+    border-color: rgb(255, 85, 85);
+    border-radius: 5px;
+    padding: 5px;
+    font-size: large;
+  }
+  
+  /* When hover over Go Back and Clear Highscores buttons */
+  .go-back-btn:hover {
+    cursor: pointer;
+    font-size: large;
+  }
+  
+  /* When hover over answer buttons */
+  .btn:hover {
+    background-color: rgb(255, 85, 85);
+  }
+  
+  /* Footer */
+  footer {
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    color: white;
+    text-align: center;
+    background-color: teal;
+  }
+  
+  /* Hide element */
+  .hide {
+    display: none;
+  }
 
 /* Animation Text */
 div.slide-left {
