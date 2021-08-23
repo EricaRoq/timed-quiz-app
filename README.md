@@ -7,6 +7,9 @@ This app will run in the browser and will feature dynamically updated HTML and C
 
 # Screenshot
 ![](./assets/images/quiz.png)
+![](./assets/images/quiz-2.png)
+![](./assets/images/quiz-3.png)
+![](./assets/images/quiz-4.png)
 
 
 # Deployed Application
