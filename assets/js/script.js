@@ -157,19 +157,19 @@ const questions = [
   },
   {
     question:
-      "What is the correct JavaScript syntax to change the content of the HTML element below?",
+      "Where is the correct place to insert a JavaScript?",
     answers: [
       {
-        text: 'document.getElementById("demo").innerHTML = "Hello World!";',
+        text: 'Both the <head> and <body> section are correct;',
         correct: true,
       },
-      { text: '#demo.innerHTML = "Hello World!";', correct: false },
+      { text: 'The <head> section;', correct: false },
       {
-        text: 'document.getElementByName("p").innerHTML = "Hello World!";',
+        text: 'The <title> section;',
         correct: false,
       },
       {
-        text: 'document.getElement("p").innerHTML = "Hello World!";',
+        text: 'The <body> section;',
         correct: false,
       },
     ],
@@ -193,15 +193,15 @@ const questions = [
     ],
   },
   {
-    question: "What is the correct way to write a JavaScript array?",
+    question: "How can you add a comment in JavaScript?",
     answers: [
-      { text: 'var colors = ["red", "green", "blue"]', correct: true },
+      { text: '//This is a comment', correct: true },
       {
-        text: 'var colors = 1 = ("red"), 2 = ("green"), 3 = ("blue")',
+        text: '<--This is a comment-->',
         correct: false,
       },
-      { text: 'var colors = "red", "green", "blue"', correct: false },
-      { text: 'var colors = (1:"red", 2:"green", 3:"blue")', correct: false },
+      { text: '#This is a comment', correct: false },
+      { text: '<This is a comment>', correct: false },
     ],
   },
   {
